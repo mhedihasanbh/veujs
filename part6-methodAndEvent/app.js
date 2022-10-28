@@ -5,16 +5,14 @@ var apps=Vue.createApp({
         }
     },
     methods:{
-    // getCurrentTime(){
-    //     let ct=new Date();
-    //     return new Date();
-    // },
-
-        increase(){
-          this.count++;
+        increase(amount){
+          this.count=this.count+amount;
         },
-        decrease(){
-            this.count--;
+        decrease(amount){
+            this.count=this.count-amount;
+        },
+        country(co){
+            console.log(co);
         }
     }
 });

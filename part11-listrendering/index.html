@@ -25,14 +25,11 @@
 </header>
 
 <div id="app">
-<!--    <h3>time{{getCurrentTime()}}</h3>-->
-    <h2>counter:{{count}}</h2>
-    <button @click="increase(1)">Increase</button>
-    <button @click="decrease(1)">Decrease</button>
-    <button @click="increase(2)">Increase</button>
-    <button @click="decrease(2)">Decrease</button>
-    <hr/>
-    <button @click="country($event)">Country</button>
+    <input type="text" v-model="newskill.name"/>
+    <button @click="addskill">Add Skill</button>
+    <ul>
+        <li v-for=" (amarskill,i) in skills" @click="removeSkill(i)">{{i+1}} {{amarskill.name}} ({{amarskill.experience}})</li>
+    </ul>
 </div>
 <script src="app.js"></script>
 </body>

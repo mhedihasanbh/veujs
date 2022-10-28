@@ -31,17 +31,10 @@ header h2{
 #app{
     text-align: center;
     padding: 50px;
-    background-color: dimgray;
+    background-color: #E4E7E4;
 }
-#app h3{
-    text-transform: uppercase;
-    color:#ffffff;
-}
-#app a{
-    color: lightgoldenrodyellow;
-}
-button{
-    padding: 15px;
-    margin-right: 15px;
-    margin-top: 12px;
+.card{
+    width:200px;
+    height:200px;
+    border:1px solid black;
 }
